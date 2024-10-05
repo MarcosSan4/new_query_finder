@@ -28,7 +28,7 @@ The script performs the following steps:
 git clone https://github.com/yourusername/automatic-query-review.git
 cd automatic-query-review
 
-2. Install Dependencies
+### 2. Install Dependencies
 
 Create and activate a virtual environment (optional but recommended):
 
@@ -39,7 +39,7 @@ Install the required packages:
 
 pip install -r requirements.txt
 
-3. Configure Environment Variables
+### 3. Configure Environment Variables
 
 Create a .env file in the project root directory with the following content:
 
@@ -50,7 +50,7 @@ OPENAI_API_KEY=your_openai_api_key
 
 Replace the placeholder values with your actual credentials.
 
-4. Adjust Configuration (Optional)
+### 4. Adjust Configuration (Optional)
 
 Review and adjust the configuration variables in the script (automatic_query_review.py) if necessary:
 
@@ -58,7 +58,7 @@ Review and adjust the configuration variables in the script (automatic_query_rev
 	•	EMBEDDING_MODEL: The OpenAI model used for embeddings.
 	•	SIMILARITY_THRESHOLD: The threshold for classifying a query as new.
 
-5. Prepare Your Database
+### 5. Prepare Your Database
 
 Ensure your PostgreSQL database (message_logs table) has the following columns:
 
@@ -71,7 +71,7 @@ Ensure your PostgreSQL database (message_logs table) has the following columns:
 	•	is_new_query (Boolean, nullable)
 	•	message_type (Text) - Used to filter queries.
 
-6. Run the Script
+### 6. Run the Script
 
 Execute the script:
 
