@@ -1,5 +1,3 @@
-# automatic_query_review.py
-
 """
 Automatic Query Review System
 
